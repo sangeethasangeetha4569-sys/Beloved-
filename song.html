@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Song 🎵</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="song-card">
+
+        <h1> Our Songs 🎵🫧</h1>
+
+        <p>
+            Choose our special song. 🤍🥺
+        </p>
+
+        <button onclick="playDedicated()">❤️ Dedicated You</button>
+        <br><br>
+
+        <button onclick="playRemaining()">🤍 Remaining You</button>
+        <br><br>
+
+        <button onclick="window.location.href='promise.html'">💍 Our Promise</button>
+
+    </div>
+
+</div>
+
+<audio id="player" controls autoplay></audio>
+
+<script>
+const player = document.getElementById("player");
+
+function playDedicated() {
+    player.src = "Music/Uyir uruvaatha.mp3";
+    player.play();
+}
+
+function playRemaining() {
+    player.src = "Music/Ennaga poranthae.mp3";
+    player.play();
+}
+</script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+        
